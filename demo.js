@@ -14,7 +14,7 @@ const colorStates = {
 // we want to make clickable. Without JavaScript, clicking on these heart shapes
 // does nothing. Uncomment the code and refresh the demo page. 
 
-// const articleHearts = document.querySelectorAll(".like-glyph");
+const articleHearts = document.querySelectorAll(".like-glyph");
 
 function likeCallback(e) {
   const heart = e.target;
@@ -38,9 +38,9 @@ function likeCallback(e) {
 // work, we need to add a click event listener to the elements we identified in
 // STEP 1. That's Pillar 2, event handling. Uncomment this code:
 
-// for (const glyph of articleHearts) {
-//   glyph.addEventListener("click", likeCallback);
-// }
+for (const glyph of articleHearts) {
+ glyph.addEventListener("click", likeCallback);
+}
 
 // STEP 4: 
 
